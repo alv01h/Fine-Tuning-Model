@@ -1,0 +1,14 @@
+# API keys and secrets
+.env
+.env.*
+!.env.example
+secrets.json
+secrets.yaml
+*.key
+api_key.txt
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/

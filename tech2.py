@@ -1,7 +1,11 @@
+import os
 import time
+
+from dotenv import load_dotenv
 from openai import OpenAI
 
-client = OpenAI(api_key="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")
+load_dotenv()
+client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 model = "gpt-3.5-turbo"
 print("done")
 
